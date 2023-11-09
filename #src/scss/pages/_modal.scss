@@ -1,0 +1,81 @@
+.modal-body {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	background-image: url("../../img/cosmet.png");
+	background-repeat: no-repeat;
+	background-position: 65% 66%;
+	@media screen and (max-width: 680px) {
+		background-image: none;
+	}
+	& .btn-close {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		z-index: 1000;
+	}
+	&-l {
+		max-width: 60%;
+		position: relative;
+		z-index: 10;
+		@media screen and (max-width: 680px) {
+			max-width: 100%;
+		}
+		& > h5 {
+			color: #241F1F;
+			font-size: 40px;
+			font-weight: 600;
+			line-height: 109.4%;
+			@media screen and (max-width: 520px) {
+				font-size: 30px;
+				padding-right: 40px;
+			}
+		}
+		& > h4 {
+			color: #241F1F;
+			font-size: 40px;
+			font-weight: 600;
+			line-height: 109.4%;
+			padding: 145px 0;
+			@media screen and (max-width: 520px) {
+				font-size: 30px;
+				padding: 100px 0;
+			}
+		}
+		& > p {
+			color: #686868;
+		}
+		& form {
+			max-width: 350px;
+			@media screen and (max-width: 680px) {
+				max-width: 100%;
+			}
+		}
+		& .btn {
+			width: 100%;
+		}
+	}
+	&-r {
+		& picture {
+			@media screen and (max-width: 680px) {
+				display: none;
+			}
+		}
+		& img {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+	}
+}
+.modal {
+	--bs-modal-width: 1040px;
+	--bs-modal-padding: 47px 75px 46px;
+	--bs-modal-bg: #EEF5FB;
+	@media screen and (max-width: 850px) {
+		--bs-modal-padding: 40px;
+	}
+	@media screen and (max-width: 520px) {
+		--bs-modal-padding: 15px;
+	}
+}

@@ -1,0 +1,173 @@
+.footer {
+	padding: 110px 0;
+	background: #38393A;
+	position: relative;
+	overflow: hidden;
+	@media screen and (max-width: 768px) {
+		padding: 52px 0;
+	}
+	&:after,
+	&:before {
+		color: #8F8F8F;
+		opacity: 0.05;
+		font-family: 'Nunito Sans', sans-serif;
+		font-size: 101px;
+		font-style: normal;
+		font-weight: 900;
+		line-height: 110%;
+		text-transform: uppercase;
+		position: absolute;
+		@media screen and (max-width: 991px) {
+			font-size: 80px;
+		}
+		@media screen and (max-width: 768px) {
+			font-size: 38px;
+		}
+	}
+	&:before {
+		content: 'laser equipment';
+		top: 0;
+		right: 10px;
+	}
+	&:after {
+		content: 'cosmetlaser';
+		bottom: -40px;
+		left: 50%;
+		transform: translateX(-50%);
+		@media screen and (max-width: 768px) {
+			bottom: -10px;
+		}
+	}
+	&-container {
+
+	}
+	&-logo {
+		@media screen and (max-width: 768px) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			order: -1;
+		}
+	}
+	&-wrapper {
+		justify-content: space-between;
+		& .footer-list:nth-of-type(2) {
+			& ul {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				grid-gap: 15px;
+				& li {
+					flex: 0 1 calc(50% - 7.5px);
+					margin-bottom: 0;
+					@media screen and (max-width: 768px) {
+						text-align: center;
+					}
+				}
+			}
+		}
+		& .footer-list:nth-of-type(3) {
+			@media screen and (max-width: 768px) {
+				display: none;
+			}
+		}
+		& .footer-list:nth-of-type(4) {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			@media screen and (max-width: 768px) {
+				order: -1;
+				align-items: center;
+				text-align: center;
+			}
+			& h3 {
+				max-width: 128px;
+				min-width: 128px;
+				@media screen and (max-width: 768px) {
+					max-width: 100%;
+				}
+			}
+			& ul {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				grid-gap: 15px;
+				max-width: 128px;
+				min-width: 128px;
+				@media screen and (max-width: 768px) {
+					max-width: 100%;
+				}
+				& li {
+					flex: 0 1 auto;
+					margin-bottom: 0;
+					@media screen and (max-width: 768px) {
+						text-align: center;
+					}
+					&:first-child {
+						flex: 0 1 100%;
+					}
+				}
+			}
+		}
+	}
+	&-list {
+		@media screen and (max-width: 768px) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		& > h3 {
+			color: rgba(255, 255, 255, 0.30);
+			font-size: .785rem;
+			font-weight: 400;
+			line-height: normal;
+			margin-bottom: 25px;
+			@media screen and (max-width: 768px) {
+				margin-top: 30px;
+				margin-bottom: 15px;
+			}
+		}
+		& ul {
+			list-style-type: none;
+			padding-left: 0;
+			margin-bottom: 0;
+			& li {
+				margin-bottom: 15px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				& a {
+					color: #FFF;
+					line-height: normal;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	&-info {
+		padding-top: 80px;
+		@media screen and (max-width: 768px) {
+			padding-top: 20px;
+		}
+		& div div:last-child {
+			@media screen and (max-width: 768px) {
+				margin-bottom: 15px;
+			}
+		}
+		& p,
+		& a {
+			color: rgba(255, 255, 255, 0.40);
+			font-family: 'Inter', sans-serif;
+			font-weight: 400;
+			line-height: normal;
+			text-decoration: none;
+			margin-bottom: 0;
+			@media screen and (max-width: 768px) {
+				font-size: 13px;
+			}
+			& span {
+				text-decoration: underline;
+			}
+		}
+	}
+}

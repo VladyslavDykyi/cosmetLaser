@@ -1,0 +1,106 @@
+//font-family: 'Inter', sans-serif;
+//font-family: 'Montserrat', sans-serif;
+//font-family: 'Nunito Sans', sans-serif;
+body {
+	overflow-x: hidden;
+}
+:root {
+	--bs-body-font-weight: 400;
+	--bs-body-color: #241F1F;
+	--bs-body-font-size: 1rem;
+	--bs-body-font-family: 'Nunito Sans', sans-serif;
+}
+.bg-light {
+	background-color: #F9FBFD;
+}
+.navbar {
+	--bs-navbar-active-color : #199FDA;
+}
+.navbar-nav {
+	--bs-nav-link-hover-color : #199FDA;
+	--bs-nav-link-color: #241F1F;
+}
+.btn {
+	--bs-btn-padding-x: 1.25rem;
+	--bs-btn-padding-y: 0.75rem;
+	&.btn-outline-success {
+		--bs-btn-color: #241F1F;
+		--bs-btn-border-color: #241F1F;
+		--bs-btn-hover-color: #FFFFFF;
+		--bs-btn-hover-bg: #199FDA;
+		--bs-btn-hover-border-color: #199FDA;
+		--bs-btn-focus-shadow-rgb: transpetent;
+		--bs-btn-active-color: #FFFFFF;
+		--bs-btn-active-bg: #1384B6;
+		--bs-btn-active-border-color: #1384B6;
+		--bs-btn-active-shadow: none;
+		--bs-btn-disabled-color: #241F1F;
+		--bs-btn-disabled-bg: transparent;
+		--bs-btn-disabled-border-color: #241F1F;
+		--bs-gradient: none;
+	}
+	&.btn-success {
+		--bs-btn-color: #fff;
+		--bs-btn-bg: #199FDA;
+		--bs-btn-border-color: #199FDA;
+		--bs-btn-hover-color: #fff;
+		--bs-btn-hover-bg: #43B5E8;
+		--bs-btn-hover-border-color: #43B5E8;
+		--bs-btn-focus-shadow-rgb: 60,153,110;
+		--bs-btn-active-color: #fff;
+		--bs-btn-active-bg: #1384B6;
+		--bs-btn-active-border-color: #1384B6;
+		--bs-btn-active-shadow: none;
+		--bs-btn-disabled-color: #241F1F;
+		--bs-btn-disabled-bg: #B9B9BA;
+		--bs-btn-disabled-border-color: #B9B9BA;
+	}
+}
+.container-xl {
+	max-width: 1064px;
+}
+.dropdown-toggle::after {
+	display: inline-block;
+	margin-left: 0.255em;
+	vertical-align: 0.255em;
+	content: "";
+	border-top: 1px solid;
+	border-right: 1px solid;
+	width: 8px;
+	height: 8px;
+	transform: rotate(135deg);
+	border-bottom: 0;
+	border-left: 0;
+}
+.form-label {
+	font-size: .875rem;
+	margin-bottom: 10px;
+}
+
+.form-control {
+	border-radius: 8px;
+	padding: 1.25rem 1rem;
+	font-size: .875rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #241F1F;
+	background-color: #fff;
+	border: 1px solid #E5E5E5;
+	&::placeholder {
+		color: #B9B9BA;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+	}
+	&:focus {
+		box-shadow: none;
+		border-color: #686868;
+	}
+	&.invalid {
+		border-color: #E81717;
+	}
+	&.valid {
+		border-color: #24AC21;
+	}
+}
