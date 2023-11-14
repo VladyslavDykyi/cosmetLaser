@@ -321,6 +321,10 @@ body {
           text-decoration-line: underline;
 }
 
+.dropdown-item {
+  padding: 15px 22px;
+}
+
 .footer {
   padding: 110px 0;
   background: #38393A;

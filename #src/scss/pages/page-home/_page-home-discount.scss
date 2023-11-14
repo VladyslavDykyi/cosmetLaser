@@ -1,0 +1,63 @@
+.discount {
+	padding: 109px 85px 104px;
+	position: relative;
+	border-radius: 12px;
+	background: linear-gradient(90deg, #EEF5FB 0%, #DAE8F5 100%);
+	margin: 0 0 130px;
+	overflow: hidden;
+	@media screen and (max-width: 1068px) {
+		border-radius: 0;
+	}
+	@media screen and (max-width: 991px) {
+		padding: 110px 35px 80px;
+	}
+	@media screen and (max-width: 768px) {
+		padding: 170px 8px 40px;
+		margin-bottom: 80px;
+		background: linear-gradient(180deg, #EEF5FB 0%, #DAE8F5 100%);
+	}
+	&:before {
+		content: '-20%';
+		display: block;
+		color: #199FDA;
+		font-family: 'Nunito Sans', sans-serif;
+		font-size: 227px;
+		font-style: normal;
+		font-weight: 900;
+		line-height: 110%;
+		text-transform: uppercase;
+		opacity: 0.05;
+		position: absolute;
+		right: 0;
+		bottom: 20px;
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
+	}
+	& h2 {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 28px;
+		font-weight: 600;
+		line-height: 115%;
+		@media screen and (max-width: 768px) {
+			font-size: 24px;
+		}
+	}
+	& img {
+		position: absolute;
+		bottom: 0;
+		right: 12%;
+		@media screen and (max-width: 768px) {
+			width: 160px;
+			top: 0;
+			right: -10px;
+			transform: rotate(-25deg);
+		}
+	}
+	& .btn {
+		@media screen and (max-width: 480px) {
+			max-width: 100%;
+			width: 100%;
+		}
+	}
+}

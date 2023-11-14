@@ -1,0 +1,58 @@
+.seo-text {
+	padding: 80px 0;
+	margin: 0;
+	@media screen and (max-width: 768px) {
+		padding: 50px 0;
+	}
+	& > div {
+		max-height: 132px;
+		height: 100%;
+		padding-right: 60px;
+		overflow-x: hidden;
+		overflow-y: auto;
+
+		&.active {
+			max-height: none;
+			padding-right: 0;
+		}
+		&::-webkit-scrollbar {
+			border-radius: 4px;
+			width: 3px;
+			height: 8px;
+			background-color: #DADADA;
+		}
+		&::-webkit-scrollbar-thumb {
+			border-radius: 4px;
+			height: 8px;
+			background-color: #199FDA;
+		}
+	}
+	& .bg-grad {
+		position: relative;
+		padding-bottom: 18px;
+		&.unactive:before {
+			display: none;
+		}
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 10;
+			width: 100%;
+			height: 104px;
+			background: linear-gradient(3deg, #F9FBFD 33.72%, rgba(249, 251, 253, 0.00) 149.66%);
+			cursor: pointer;
+		}
+	}
+	& h1 {
+		color: #6D6D6D;
+	}
+	& p {
+		color: #6D6D6D;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 136%;
+	}
+}
