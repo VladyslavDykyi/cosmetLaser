@@ -11,7 +11,16 @@ body {
 	--bs-body-font-family: 'Nunito Sans', sans-serif;
 }
 .bg-light {
-	background-color: #F9FBFD;
+	background-color: #F9FBFD !important;
+	opacity: 1 !important;
+}
+.bg-white-light {
+	background: linear-gradient(to top, #F9FBFD 50%, #fff 50%) !important;
+	opacity: 1 !important;
+}
+.bg-white-light-revert {
+	background: linear-gradient(to top, #fff 50%, #F9FBFD 50%) !important;
+	opacity: 1 !important;
 }
 .navbar {
 	--bs-navbar-active-color : #199FDA;
@@ -54,6 +63,22 @@ body {
 		--bs-btn-disabled-color: #241F1F;
 		--bs-btn-disabled-bg: #B9B9BA;
 		--bs-btn-disabled-border-color: #B9B9BA;
+	}
+	&.btn-outline-primary {
+		--bs-btn-color: #199FDA;
+		--bs-btn-border-color: #199FDA;
+		--bs-btn-hover-color: #fff;
+		--bs-btn-hover-bg: #199FDA;
+		--bs-btn-hover-border-color: #199FDA;
+		--bs-btn-focus-shadow-rgb: 13,110,253;
+		--bs-btn-active-color: #fff;
+		--bs-btn-active-bg: #199FDA;
+		--bs-btn-active-border-color: #199FDA;
+		--bs-btn-active-shadow: none;
+		--bs-btn-disabled-color: #199FDA;
+		--bs-btn-disabled-bg: transparent;
+		--bs-btn-disabled-border-color: #199FDA;
+		--bs-gradient: none;
 	}
 }
 .container-xl {
