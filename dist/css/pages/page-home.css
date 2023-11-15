@@ -523,7 +523,7 @@ body {
   display: block;
   width: 557px;
   height: 289px;
-  background-image: url("../../../img/bg12.png");
+  background-image: url("../../img/bg12.png");
   background-repeat: no-repeat;
   position: absolute;
   top: -65px;
@@ -532,7 +532,7 @@ body {
 
 .first-bg {
   background-color: #EEF5FB;
-  background-image: url("../../../img/bg1.jpg");
+  background-image: url("../../img/bg1.jpg");
   background-repeat: no-repeat;
   background-position: top right;
   padding-top: 255px;
@@ -1686,7 +1686,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .first-bg {
-    background-image: url("../../../img/bg13.png");
+    background-image: url("../../img/bg13.png");
     background-position: bottom right;
   }
 
@@ -2052,13 +2052,13 @@ body {
   }
 }
 
-.webp .first:before { background-image: url(../../../img/bg12.webp); }
+.webp .first:before { background-image: url(../../img/bg12.webp); }
 
-.webp .first-bg { background-image: url(../../../img/bg1.webp); }
+.webp .first-bg { background-image: url(../../img/bg1.webp); }
 
 .webp .modal-body { background-image: url(../../img/cosmet.webp); }
 
 @media screen and (max-width: 768px) {
 
-  .webp .first-bg { background-image: url(../../../img/bg13.webp); }
+  .webp .first-bg { background-image: url(../../img/bg13.webp); }
 }
