@@ -1,40 +1,71 @@
 .second {
+	@media screen and (max-width: 991px) {
+		flex-wrap: wrap;
+	}
 	&-item {
 		flex: 1 2 33.33333%;
-		background-color: #DAE8F5;
 		padding: 150px 40px 132px;
 		background-repeat: no-repeat;
 		transition: all .2s linear;
-
+		background-position: 150px -10%;
 		&:hover {
 			flex: 1 2 50%;
-
-			&:first-child {
-				background-position: 75% 0 !important;
-			}
-
-			&:nth-child(2) {
-				background-position: 75% -5% !important;
-			}
-
-			&:last-child {
-				background-position: 75% -5% !important;
-				background-size: 35%;
+			background-position: 130px -20%;
+		}
+		@media screen and (max-width: 1280px) {
+			padding: 150px 40px 132px 15px;
+			background-position: 120px -10%;
+		}
+		@media screen and (max-width: 991px) {
+			flex: 1 2 100%;
+			padding: 50px 15px 65px 15px;
+			border-radius: 12px;
+			margin-top: 20px;
+			background-position: 200px -10%;
+			background-size: 50%;
+			&:hover {
+				flex: 1 2 100%;
+				background-position: 200px -10%;
 			}
 		}
-
+		@media screen and (max-width: 768px) {
+			background-position: 200px bottom;
+			background-size: 250px auto;
+			&:hover {
+				background-position: 200px bottom;
+			}
+		}
+		@media screen and (max-width: 425px) {
+			background-position: 120px bottom;
+			&:hover {
+				background-position: 120px bottom;
+			}
+		}
+		&:nth-child(1) {
+			background-color: #DAE8F5;
+		}
+		&:nth-child(2) {
+			background-color: #C6DCF0;
+		}
+		&:nth-child(3) {
+			background-color: #B2D0EB;
+		}
 		& > div {
 			max-width: 235px;
-
+			@media screen and (max-width: 768px) {
+				max-width: 170px;
+			}
 			& > h2 {
 				position: relative;
 				padding-top: 18px;
 				font-family: 'Montserrat', sans-serif;
 				font-size: 28px;
 				font-weight: 600;
-				line-height: 114.4%;
+				line-height: 115%;
 				margin-bottom: 15px;
-
+				@media screen and (max-width: 768px) {
+					font-size: 20px;
+				}
 				&:before {
 					content: '';
 					width: 38px;

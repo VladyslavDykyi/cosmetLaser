@@ -51,17 +51,34 @@
 		left: -420px;
 	}
 }
-
+.our-blog {
+	&:before {
+		content: 'Our blog';
+		color: #8F8F8F;
+		opacity: 0.05;
+		font-family: 'Nunito Sans', sans-serif;
+		font-size: 151px;
+		font-style: normal;
+		font-weight: 900;
+		line-height: 110%;
+		text-transform: uppercase;
+		position: absolute;
+		top: -50px;
+		right: -115px;
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
+	}
+}
 .bg-dot {
 	position: relative;
-
 	&:after {
 		content: '';
 		width: 360px;
 		height: 222px;
 		display: block;
 		position: absolute;
-		background-color: red;
+		background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='11' cy='11' r='3' fill='%23E3E3E3'/%3e%3c/svg%3e ");
 		@media screen and (max-width: 768px) {
 			display: none;
 		}

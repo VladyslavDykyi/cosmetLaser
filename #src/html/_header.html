@@ -1,69 +1,98 @@
 <header class="header-bg">
-	<nav class="navbar navbar-expand-lg bg-body-tertiary header">
+	<nav class="header">
 		<div class="container-xl header-container">
-			<a class="navbar-brand header-logo-mob" href="#">
+			<a class="header-logo" href="#">
 				<img src="./img/logo.png" alt="">
 			</a>
-			<a class="nav-link header-tel-mob" href="tel:80000000000">
-				<i class="bi bi-telephone-fill"></i>
-				+800 000 000 00
-			</a>
-			<button class="navbar-toggler header-burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse header-wrapper" id="navbarSupportedContent">
-				<a class="navbar-brand header-logo" href="#">
-					<img src="./img/logo.png" alt="">
-				</a>
-
-				<ul class="navbar-nav  mb-2 mb-lg-0 header-list">
-					<li class="nav-item dropdown header-list-item">
-						<a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							Обладнання
-						</a>
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="#">Лазерне обладнання</a></li>
-							<li><a class="dropdown-item" href="#">Обладнання для тіла</a></li>
-							<li><a class="dropdown-item" href="#">Обладнання для лиця</a></li>
-						</ul>
-					</li>
-					<li class="nav-item header-list-item">
-						<a class="nav-link" href="#">Оренда</a>
-					</li>
-					<li class="nav-item header-list-item">
-						<a class="nav-link" href="#">Сервіс</a>
-					</li>
-					<li class="nav-item header-list-item">
-						<a class="nav-link " href="#">Контакти</a>
-					</li>
-				</ul>
-				<ul class="navbar-nav  mb-2 mb-lg-0 header-list-info">
-					<li class="nav-item header-list-info-item">
-						<a class="nav-link" href="tel:80000000000">
-							<i class="bi bi-telephone-fill"></i>
-							+800 000 000 00
-						</a>
-					</li>
-					<li class="nav-item dropdown header-list-info-item">
-						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							UA
-						</a>
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="#">UA</a></li>
-							<li><a class="dropdown-item" href="#">RU</a></li>
-						</ul>
-					</li>
-				</ul>
-				<ul class="header-lang-mob">
-					<li>
-						<a class="active" href="#">UA</a>
-					</li>
-					<li>
-						<a href="#">RU</a>
-					</li>
-				</ul>
-			</div>
-
+			<ul class="header-list">
+				<li class="nav-item dropdown header-list-item">
+					<a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Обладнання
+					</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Лазерне обладнання</a></li>
+						<li><a class="dropdown-item" href="#">Обладнання для тіла</a></li>
+						<li><a class="dropdown-item" href="#">Обладнання для лиця</a></li>
+					</ul>
+				</li>
+				<li class="header-list-item">
+					<a href="#">Оренда</a>
+				</li>
+				<li class="header-list-item">
+					<a href="#">Сервіс</a>
+				</li>
+				<li class="header-list-item">
+					<a href="#">Контакти</a>
+				</li>
+			</ul>
+			<ul class="header-list-info">
+				<li class="header-list-info-item">
+					<a href="tel:80000000000">
+						<i class="bi bi-telephone-fill"></i>
+						+800 000 000 00
+					</a>
+				</li>
+				<li class="dropdown header-list-info-item">
+					<a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						UA
+					</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">UA</a></li>
+						<li><a class="dropdown-item" href="#">RU</a></li>
+					</ul>
+				</li>
+			</ul>
+			<button class="btn-close header-burger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></button>
 		</div>
 	</nav>
 </header>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+	<div class="offcanvas-header">
+		<a class="header-logo-mob" href="#">
+			<img src="./img/logo.png" alt="">
+		</a>
+		<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+	</div>
+	<div class="offcanvas-body">
+		<!-- Зміст бокового виїздного меню тут -->
+		<ul class="header-list-mob">
+			<li class="accordion" id="accordionExample">
+				<div class="accordion-item">
+					<h2 class="accordion-header">
+						<a class="header-list-item accordion-button collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+							Обладнання
+						</a>
+					</h2>
+					<div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+						<ul class="accordion-body">
+							<li><a href="#">Лазерне обладнання</a></li>
+							<li><a href="#">Обладнання для тіла</a></li>
+							<li><a href="#">Обладнання для лиця</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="header-list-item">
+				<a href="#">Оренда</a>
+			</li>
+			<li class="header-list-item">
+				<a href="#">Сервіс</a>
+			</li>
+			<li class="header-list-item">
+				<a href="#">Контакти</a>
+			</li>
+		</ul>
+		<ul class="language-mob">
+			<li class="language-mob-item active">
+				<a href="#">
+					UA
+				</a>
+			</li>
+			<li class="language-mob-item">
+				<a href="#">
+					RU
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>

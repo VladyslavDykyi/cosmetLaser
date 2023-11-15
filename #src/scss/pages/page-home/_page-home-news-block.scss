@@ -1,5 +1,6 @@
 .news {
 	&-block {
+		position: relative;
 		padding-top: 140px;
 		@media screen and (max-width: 768px) {
 			margin: 0;
@@ -36,8 +37,8 @@
 	}
 	&-wrapper {
 		&:after {
-			left: -54px;
-			bottom: -32px;
+			left: -43px;
+			bottom: -21px;
 		}
 	}
 	&-list {
@@ -52,6 +53,7 @@
 			border: 1px solid #F7F7F7;
 			border-radius: 8px;
 			background-color: #F7F7F7;
+			transition: all 0.15s ease-in-out;
 			@media screen and (max-width: 768px) {
 				flex-direction: column-reverse;
 			}

@@ -8,23 +8,7 @@
 	@media screen and (max-width: 768px) {
 		padding: 35px 8px;
 	}
-	&:before {
-		content: 'Our blog';
-		color: #8F8F8F;
-		opacity: 0.05;
-		font-family: 'Nunito Sans', sans-serif;
-		font-size: 151px;
-		font-style: normal;
-		font-weight: 900;
-		line-height: 110%;
-		text-transform: uppercase;
-		position: absolute;
-		bottom: -110px;
-		right: -115px;
-		@media screen and (max-width: 768px) {
-			display: none;
-		}
-	}
+
 	& > div:first-child {
 		@media screen and (max-width: 768px) {
 			margin-bottom: 30px;
