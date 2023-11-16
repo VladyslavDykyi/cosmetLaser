@@ -1,0 +1,132 @@
+@import "_default";
+@import "_header";
+
+.bg-white-light {
+	background: #F9FBFD !important;
+	padding: 30px 0 80px;
+	@media screen and (max-width: 768px) {
+		padding: 35px 0 60px;
+	}
+}
+.row {
+	--bs-gutter-x: 1.75rem;
+	--bs-gutter-y: 1.75rem;
+	@media screen and (max-width: 768px) {
+		--bs-gutter-x: 1rem;
+		--bs-gutter-y: 2rem;
+	}
+}
+.tab-nav {
+	border-bottom: 1px solid #B9B9BA;
+	margin-bottom: 13px;
+	@media screen and (max-width: 768px) {
+		margin-bottom: 30px;
+	}
+	&-list {
+		list-style-type: none;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		margin-bottom: 0;
+		padding-left: 0;
+	}
+	&-item {
+		text-align: center;
+		border-bottom: 3px solid transparent;
+		font-size: 18px;
+		line-height: 110%;
+		font-weight: 700;
+		text-transform: uppercase;
+		cursor: pointer;
+		margin: 0 4px;
+		@media screen and (max-width: 768px) {
+			font-size: 13px;
+		}
+		@media screen and (max-width: 425px) {
+			font-size: 10px;
+		}
+		&:hover {
+			color: #199FDA;
+			border-bottom: 4px solid #199FDA;
+			margin-bottom: -1px;
+		}
+		&.active {
+			cursor: auto;
+			color: #199FDA;
+			border-bottom: 4px solid #199FDA;
+			margin-bottom: -1px;
+		}
+	}
+}
+.cards {
+	display: none;
+	&.active {
+		display: flex;
+	}
+	&-bg {
+		background: #F9FBFD !important;
+		padding: 52px 0 110px;
+		@media screen and (max-width: 768px) {
+			padding: 0 0 45px;
+		}
+	}
+	&-item {
+		&-wrapper {
+			border-radius: 8px;
+			background-color: #F3F5F6;
+			padding: 13px 10px 30px;
+			text-align: center;
+			border: 1px solid #F3F5F6;
+			@media screen and (max-width: 425px) {
+				padding: 30px 5px;
+			}
+			&:hover {
+				border-color: #E5E5E5;
+				box-shadow: 0 7px 12px 0 #F3F5F6;
+			}
+		}
+		&-img {
+			display: block;
+			margin-bottom: 46px;
+			& img {
+				width: 100%;
+				height: 200px;
+				object-fit: contain;
+				@media screen and (max-width: 425px) {
+					height: 88px;
+				}
+			}
+		}
+		&-category {
+			color: rgba(36, 31, 31, 0.7);
+			font-size: 14px;
+			font-weight: 400;
+			line-height: normal;
+			margin-bottom: 5px;
+		}
+		&-name {
+			font-size: 18px;
+			font-weight: 600;
+			line-height: normal;
+			margin-bottom: 10px;
+			@media screen and (max-width: 768px) {
+				font-size: 16px;
+			}
+			& > a {
+				color: inherit;
+				text-decoration: none;
+			}
+		}
+		&-price {
+			font-size: 28px;
+			font-weight: 600;
+			line-height: normal;
+			margin-bottom: 0;
+			@media screen and (max-width: 768px) {
+				font-size: 22px;
+			}
+		}
+	}
+}
+@import "./page-home/_page-home-consultation";
+@import "_footer";
