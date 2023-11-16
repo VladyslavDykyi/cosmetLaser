@@ -1,0 +1,50 @@
+@import "_default";
+@import "_header";
+
+@import "./page-home/_page-home-consultation";
+
+.consultation {
+	margin: 30px 0 80px;
+}
+.contact-list {
+	& > .col-12.col-sm-6.col-md-3 {
+		margin-bottom: 30px;
+	}
+}
+.contact-item {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	border-radius: 15px;
+	background: #F3F5F6;
+	padding: 40px 30px;
+	@media screen and (max-width: 991px) {
+		padding: 20px 12px;
+	}
+	& h2 {
+		margin-top: 20px;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: normal;
+		margin-bottom: 10px;
+	}
+	& p a,
+	& p {
+		color: #686868;
+		text-align: center;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 135.4%;
+		text-decoration: none;
+		margin-bottom: 10px;
+	}
+}
+.iframe-map {
+	& iframe {
+		border-radius: 20px;
+	}
+}
+
+@import "_footer";
