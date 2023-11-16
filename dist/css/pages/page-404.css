@@ -186,7 +186,7 @@ body {
 
 .breadcrumb {
   padding: 40px 0 70px;
-  margin-bottom: 60px;
+  margin-bottom: 0;
   list-style: none;
 }
 
@@ -771,7 +771,7 @@ body {
 @media screen and (max-width: 768px) {
   .breadcrumb {
     padding: 33px 0 52px;
-    margin-bottom: 26px;
+    margin-bottom: 0;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
