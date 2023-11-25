@@ -14,6 +14,11 @@ body {
   opacity: 1 !important;
 }
 
+.bg-light2 {
+  background-color: #EEF5FB !important;
+  opacity: 1 !important;
+}
+
 .bg-white-light {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #F9FBFD), color-stop(50%, #fff)) !important;
   background: -o-linear-gradient(bottom, #F9FBFD 50%, #fff 50%) !important;
@@ -788,18 +793,6 @@ body {
   left: auto;
 }
 
-.mySwiper.swiper {
-  overflow-y: visible;
-  padding-top: 94px;
-}
-
-.mySwiper .swiper-wrapper {
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-}
-
 .card {
   border: none;
   -webkit-border-radius: 8px;
@@ -1318,6 +1311,18 @@ body {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='11' cy='11' r='3' fill='%23E3E3E3'/%3e%3c/svg%3e ");
 }
 
+.mySwiper.swiper {
+  overflow-y: visible;
+  padding-top: 94px;
+}
+
+.mySwiper .swiper-wrapper {
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
 .footer {
   padding: 110px 0;
   background: #38393A;
@@ -1803,30 +1808,6 @@ body {
     display: none;
   }
 
-  .mySwiper.swiper {
-    padding-top: 0;
-    overflow-y: hidden;
-  }
-
-  .mySwiper .swiper-wrapper {
-    grid-gap: 15px;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-  }
-
-  .mySwiper .swiper-wrapper .swiper-slide {
-    height: auto;
-  }
-
-  .mySwiper .swiper-wrapper .card:nth-child(n + 5) {
-    display: none;
-  }
-
-  .mySwiper .swiper-wrapper.active .card:nth-child(n + 5) {
-    display: block;
-  }
-
   .card {
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 -webkit-calc(50% - 7.5px);
@@ -1958,6 +1939,30 @@ body {
 
   .bg-dot:after {
     display: none;
+  }
+
+  .mySwiper.swiper {
+    padding-top: 0;
+    overflow-y: hidden;
+  }
+
+  .mySwiper .swiper-wrapper {
+    grid-gap: 15px;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+
+  .mySwiper .swiper-wrapper .swiper-slide {
+    height: auto;
+  }
+
+  .mySwiper .swiper-wrapper .card:nth-child(n + 5) {
+    display: none;
+  }
+
+  .mySwiper .swiper-wrapper.active .card:nth-child(n + 5) {
+    display: block;
   }
 
   .footer {

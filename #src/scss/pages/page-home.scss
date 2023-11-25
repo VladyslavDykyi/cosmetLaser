@@ -84,6 +84,42 @@
 		}
 	}
 }
+.mySwiper {
+	&.swiper {
+		overflow-y: visible;
+		padding-top: 94px;
+		@media screen and (max-width: 768px) {
+			padding-top: 0;
+			overflow-y: hidden;
+		}
+	}
+
+	& .swiper-wrapper {
+		align-items: stretch;
+		@media screen and (max-width: 768px) {
+			grid-gap: 15px;
+			flex-wrap: wrap;
+		}
+
+		& .swiper-slide {
+			@media screen and (max-width: 768px) {
+				height: auto;
+			}
+		}
+
+		& .card:nth-child(n + 5) {
+			@media screen and (max-width: 768px) {
+				display: none;
+			}
+		}
+
+		&.active .card:nth-child(n + 5) {
+			@media screen and (max-width: 768px) {
+				display: block;
+			}
+		}
+	}
+}
 
 @import "_footer";
 @import "_modal";

@@ -1,0 +1,104 @@
+.photo-gallery {
+	padding: 110px 0;
+	@media screen and (max-width: 768px) {
+		padding: 35px 0;
+	}
+	&-title {
+		color: #241F1F;
+		font-size: 40px;
+		font-weight: 600;
+		line-height: 110%;
+		text-align: center;
+		@media screen and (max-width: 768px) {
+			font-size: 30px;
+		}
+	}
+}
+
+.gallery {
+	&-item {
+		width: 50%;
+		border-radius: 10px;
+		margin: 0 50px!important;
+		@media screen and (max-width: 768px) {
+			margin: 0 15px!important;
+			width: 60%;
+		}
+		& img {
+			display: block;
+			width: 100%;
+			height: auto;
+			border-radius: 10px;
+			@media screen and (max-width: 768px) {
+				height: 232px;
+			}
+		}
+	}
+}
+.mySwiperGallery {
+	width: 100%;
+	padding-top: 46px;
+	padding-bottom: 46px;
+	@media screen and (max-width: 768px) {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	&.swiper-3d .swiper-slide-shadow,
+	&.swiper-3d .swiper-slide-shadow-bottom,
+	&.swiper-3d .swiper-slide-shadow-left,
+	&.swiper-3d .swiper-slide-shadow-right,
+	&.swiper-3d .swiper-slide-shadow-top {
+		display: none;
+	}
+	&.mySwiperGallery .swiper-button-prev,
+	&.mySwiperGallery .swiper-button-next {
+		top: 50%;
+		width: 47px;
+		height: 47px;
+		border: 1px solid #199FDA;
+		border-radius: 50%;
+		background-color: #199FDA;
+
+		&:after {
+			--swiper-navigation-size: 1rem;
+			color: #fff;
+		}
+
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
+
+		&.swiper-button-disabled {
+			border-color: #B9B9BA;
+			background-color: transparent;
+
+			&:after {
+				--swiper-navigation-size: 1rem;
+				color: #B9B9BA;
+			}
+		}
+	}
+	&.mySwiperGallery .swiper-button-next {
+		right: 10%;
+	}
+
+	&.mySwiperGallery .swiper-button-prev {
+		right: auto;
+		left: 10%;
+	}
+	& .swiper-pagination-bullet {
+		width: 15px;
+		height: 15px;
+		border: 2px solid transparent;
+		background-color: #199FDA33;
+		opacity: 1;
+		@media screen and (max-width: 768px) {
+			width: 10px;
+			height: 10px;
+		}
+		&.swiper-pagination-bullet-active {
+			border-color: #199FDA;
+			background-color: transparent;
+		}
+	}
+}

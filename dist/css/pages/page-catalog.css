@@ -14,6 +14,11 @@ body {
   opacity: 1 !important;
 }
 
+.bg-light2 {
+  background-color: #EEF5FB !important;
+  opacity: 1 !important;
+}
+
 .bg-white-light {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #F9FBFD), color-stop(50%, #fff)) !important;
   background: -o-linear-gradient(bottom, #F9FBFD 50%, #fff 50%) !important;
@@ -595,6 +600,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
+  padding-bottom: 20px;
   margin: 0 4px;
 }
 
