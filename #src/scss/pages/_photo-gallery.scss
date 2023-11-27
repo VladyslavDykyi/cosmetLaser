@@ -18,6 +18,7 @@
 .gallery {
 	&-item {
 		width: 50%;
+		max-width: 681px;
 		border-radius: 10px;
 		margin: 0 50px!important;
 		@media screen and (max-width: 768px) {
