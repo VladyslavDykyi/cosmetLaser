@@ -894,6 +894,9 @@ body {
   display: block;
   width: 100%;
   height: auto;
+  max-height: 395px;
+  -o-object-fit: cover;
+     object-fit: cover;
   -webkit-border-radius: 10px;
           border-radius: 10px;
 }
@@ -1157,6 +1160,10 @@ body {
 
 .consultation .btn {
   width: 100%;
+}
+
+.consultation {
+  margin-top: 115px;
 }
 
 .seo-text {
@@ -1724,6 +1731,10 @@ body {
 
   .consultation h2 {
     font-size: 22px;
+  }
+
+  .consultation {
+    margin-top: 55px;
   }
 
   .seo-text {

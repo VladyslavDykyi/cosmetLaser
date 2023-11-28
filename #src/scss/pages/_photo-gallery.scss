@@ -29,6 +29,8 @@
 			display: block;
 			width: 100%;
 			height: auto;
+			max-height: 395px;
+			object-fit: cover;
 			border-radius: 10px;
 			@media screen and (max-width: 768px) {
 				height: 232px;

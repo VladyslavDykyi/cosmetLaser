@@ -60,7 +60,14 @@
 		margin-bottom: -50px;
 	}
 }
+
 @import "./page-home/_page-home-consultation";
+.consultation {
+	margin-top: 115px;
+	@media screen and (max-width: 768px) {
+		margin-top: 55px;
+	}
+}
 @import "./page-home/_page-home-seo-text";
 @import "_footer";
 @media screen and (max-width: 768px) {
