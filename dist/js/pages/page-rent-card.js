@@ -22,28 +22,6 @@
 			swiper: swiperProdNav,
 		},
 	});
-	const swiper = new Swiper(".mySwiper", {
-		slidesPerView: 1,
-		spaceBetween: 0,
-		navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev",
-		},
-		pagination: {
-			el: ".swiper-pagination",
-			clickable: true,
-		},
-		breakpoints: {
-			480: {
-				slidesPerView: 2,
-				spaceBetween: 20,
-			},
-			991: {
-				slidesPerView: 3,
-				spaceBetween: 40,
-			},
-		},
-	});
 	const mySwiperGallery = new Swiper(".mySwiperGallery", {
 		effect: "coverflow",
 		grabCursor: true,

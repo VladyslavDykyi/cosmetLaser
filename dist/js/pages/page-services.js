@@ -9,19 +9,6 @@
 		});
 	}
 	openSeoText('.bg-grad', '.seo-text > div');
-	const swiperProdNav = new Swiper(".mySwiperFor", {
-		spaceBetween: 10,
-		slidesPerView: 4,
-		freeMode: true,
-		watchSlidesProgress: true,
-	});
-	const swiperProdNFor = new Swiper(".mySwiperNav", {
-		spaceBetween: 10,
-		grabCursor: true,
-		thumbs: {
-			swiper: swiperProdNav,
-		},
-	});
 	const mySwiperGallery = new Swiper(".mySwiperGallery", {
 		effect: "coverflow",
 		grabCursor: true,
@@ -43,21 +30,6 @@
 			clickable: true,
 		},
 	});
-	if (window.innerWidth <= 768) {
-		const mySwiperDescription = new Swiper(".mySwiperDescription", {
-			effect: "coverflow",
-			grabCursor: true,
-			centeredSlides: true,
-			slidesPerView: "auto",
-			coverflowEffect: {
-				rotate: 0,
-				stretch: 0,
-				depth: 0,
-				modifier: 1,
-				slideShadows: true,
-			},
-		});
-	}
 	const selectorTel = document.getElementById("formControlInput2");
 
 	const tel = new Inputmask("+38 (099) 999-99-99");

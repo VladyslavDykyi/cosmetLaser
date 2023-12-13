@@ -1,0 +1,15 @@
+.banner {
+	padding-bottom: 80px;
+	& img {
+		position: relative;
+		z-index: 10;
+		height: 100%;
+		max-height: 410px;
+		object-fit: cover;
+		display: block;
+		width: 100%;
+		@media screen and (max-width: 580px) {
+			max-height: 250px;
+		}
+	}
+}
