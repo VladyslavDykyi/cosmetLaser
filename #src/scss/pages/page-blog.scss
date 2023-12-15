@@ -1,0 +1,38 @@
+@import "_default";
+@import "_header";
+.bg-white-light {
+	background: #F9FBFD !important;
+	padding: 25px 0 80px;
+	@media screen and (max-width: 768px) {
+		padding: 35px 0 60px;
+	}
+}
+.our {
+	position: relative;
+	&:before {
+		color: rgba(143, 143, 143, 0.05);
+		font-family: 'Nunito Sans', sans-serif;
+		font-size: 151px;
+		font-style: normal;
+		font-weight: 900;
+		line-height: 110%;
+		text-transform: uppercase;
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
+	}
+	&-news {
+		&:before {
+			content: 'news';
+			position: absolute;
+			top: -80px;
+			right: 0;
+		}
+	}
+}
+@import "./page-blog/_page-blog-actual";
+@import "./page-blog/_page-blog-list";
+@import "./page-blog/_page-blog-list-item";
+
+@import "./page-home/_page-home-consultation";
+@import "_footer";
