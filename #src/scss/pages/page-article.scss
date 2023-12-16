@@ -1,0 +1,228 @@
+@import "_default";
+@import "_header";
+.bg-white-light {
+	background: #F9FBFD !important;
+	padding: 25px 0 80px;
+	@media screen and (max-width: 768px) {
+		padding: 35px 0 60px;
+	}
+}
+.our {
+	position: relative;
+	&:before {
+		color: rgba(143, 143, 143, 0.05);
+		font-family: 'Nunito Sans', sans-serif;
+		font-size: 151px;
+		font-style: normal;
+		font-weight: 900;
+		line-height: 110%;
+		text-transform: uppercase;
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
+	}
+	&-news {
+		&:before {
+			content: 'news';
+			position: absolute;
+			top: -80px;
+			right: 0;
+		}
+	}
+}
+.articles {
+	padding-top: 80px;
+	@media screen and (max-width: 768px) {
+		padding-top: 24px;
+	}
+	&-info {
+		display: flex;
+		grid-gap: 45px;
+		justify-content: space-between;
+		margin-bottom: 35px;
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+			grid-gap: 15px;
+			align-items: center;
+			margin-bottom: 20px;
+		}
+		& > span {
+			& time {
+				color: #7E8492;
+				line-height: normal;
+			}
+			& span:last-child {
+				margin-left: 10px;
+				color: #1D1E25;
+				font-weight: 600;
+				line-height: normal;
+			}
+		}
+	}
+	&-size {
+		padding: 0 89px;
+		@media screen and (max-width: 768px) {
+			padding: 0 50px;
+		}
+		@media screen and (max-width: 576px) {
+			padding: 0 20px;
+		}
+	}
+	&-wrapper {
+
+	}
+	&-img {
+		width: 100%;
+		height: auto;
+		max-height: 450px;
+		object-fit: cover;
+		border-radius: 15px;
+	}
+	&-text {
+		margin-top: 35px;
+		margin-bottom: 0;
+		color: #525252;
+		font-feature-settings: 'clig' off, 'liga' off;
+		font-size: 18px;
+		line-height: 161%;
+	}
+	&-title {
+		margin-top: 80px;
+		color: #241F1F;
+		font-size: 40px;
+		font-weight: 600;
+		line-height: 110%;
+		@media screen and (max-width: 768px) {
+			font-size: 30px;
+			margin-top: 50px;
+		}
+	}
+	&-list2 {
+		margin-top: 35px;
+		display: flex;
+		flex-wrap: wrap;
+		grid-gap: 28px;
+		padding-left: 0;
+		list-style: none;
+		margin-bottom: 0;
+		&-item {
+			flex: 1 2 calc(33.33333% - 18.66667px);
+			@media screen and (max-width: 560px) {
+				flex: 1 2 100%;
+			}
+		}
+	}
+	&-fig {
+		margin-bottom: 0;
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			max-height: 277px;
+			border-radius: 8px;
+		}
+		&-text {
+			padding-top: 15px;
+			& p {
+				color: #1A2335;
+				font-weight: 600;
+				line-height: 160%;
+				margin-bottom: 0;
+				text-align: center;
+			}
+		}
+	}
+}
+.video {
+	padding: 0 89px;
+	@media screen and (max-width: 768px) {
+		padding: 0 50px;
+	}
+	@media screen and (max-width: 576px) {
+		padding: 0 20px;
+	}
+	& h2 {
+		font-size: 40px;
+		font-weight: 600;
+		line-height: 110%;
+		margin-bottom: 35px;
+		@media screen and (max-width: 768px) {
+			font-size: 30px;
+		}
+	}
+	&-iframe {
+		& iframe {
+			display: block;
+			width: 100%;
+			height: 450px;
+			border-radius: 8px;
+			@media screen and (max-width: 768px) {
+				height: 350px;
+			}
+			@media screen and (max-width: 680px) {
+				height: 300px;
+			}
+			@media screen and (max-width: 576px) {
+				height: 250px;
+			}
+		}
+	}
+	&-links {
+		margin-top: 40px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@media screen and (max-width: 680px) {
+			flex-direction: column;
+			grid-gap: 25px;
+		}
+		&-share {
+			display: flex;
+			grid-gap: 15px;
+			align-items: center;
+			& span {
+				margin-right: 5px;
+			}
+			& a {
+				display: inline-block;
+				text-decoration: none;
+			}
+		}
+		&-all {
+			@media screen and (max-width: 680px) {
+				width: 100%;
+			}
+			& a {
+				@media screen and (max-width: 680px) {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+.bg-dot {
+	position: relative;
+	&:after {
+		content: '';
+		width: 225px;
+		height: 132px;
+		display: block;
+		position: absolute;
+		background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22' fill='none'%3e%3ccircle cx='11' cy='11' r='1.5' fill='%23E3E3E3'/%3e%3c/svg%3e");
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
+	}
+	&.pos1:after {
+		top: 55%;
+		left: -15.3%;
+	}
+	&.pos2:after {
+		bottom: -55px;
+		right: -144px;
+	}
+}
+@import "./page-blog/_page-blog-list";
+
+@import "./page-home/_page-home-consultation";
+@import "_footer";
