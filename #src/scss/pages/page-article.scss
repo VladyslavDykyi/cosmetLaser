@@ -78,7 +78,7 @@
 		object-fit: cover;
 		border-radius: 15px;
 	}
-	&-text {
+	& > p {
 		margin-top: 35px;
 		margin-bottom: 0;
 		color: #525252;
@@ -86,7 +86,7 @@
 		font-size: 18px;
 		line-height: 161%;
 	}
-	&-title {
+	& > h2 {
 		margin-top: 80px;
 		color: #241F1F;
 		font-size: 40px;
@@ -94,6 +94,28 @@
 		line-height: 110%;
 		@media screen and (max-width: 768px) {
 			font-size: 30px;
+			margin-top: 50px;
+		}
+	}
+	& > h3 {
+		margin-top: 80px;
+		color: #241F1F;
+		font-size: 34px;
+		font-weight: 600;
+		line-height: 110%;
+		@media screen and (max-width: 768px) {
+			font-size: 24px;
+			margin-top: 50px;
+		}
+	}
+	& > h4 {
+		margin-top: 80px;
+		color: #241F1F;
+		font-size: 28px;
+		font-weight: 600;
+		line-height: 110%;
+		@media screen and (max-width: 768px) {
+			font-size: 18px;
 			margin-top: 50px;
 		}
 	}
